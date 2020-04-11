@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="rootnav" id="BYZ-38-t0r" customClass="ViewController" customModule="TranslationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newLbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-P1-Uzt" customClass="UILocalizedLabel" customModule="TranslationDemo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3M4-E0-kpp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write your name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kzp-xm-8E1">
+                                <rect key="frame" x="20" y="135" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write your phone number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yty-K0-tek">
+                                <rect key="frame" x="20" y="184" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newLbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnZ-e4-rLA" customClass="UILocalizedLabel" customModule="TranslationDemo" customModuleProvider="target">
+                                <rect key="frame" x="179.5" y="437.5" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iy-iA-vHY">
+                                <rect key="frame" x="170" y="336" width="74" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lIp-21-leZ"/>
+                                </constraints>
+                                <state key="normal" title="Open Alert"/>
+                                <connections>
+                                    <action selector="openAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THq-4U-8Gh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbY-lu-Zj3" customClass="UILocalizedButton" customModule="TranslationDemo" customModuleProvider="target">
+                                <rect key="frame" x="180.5" y="383" width="53" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N1X-BJ-Ixy"/>
+                                </constraints>
+                                <state key="normal" title="langBtn"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iLo-le-ptI"/>
+                                    <action selector="openAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLJ-zc-ZiL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jme-P1-Uzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Mc-Px-VVB"/>
+                            <constraint firstItem="kzp-xm-8E1" firstAttribute="top" secondItem="Jme-P1-Uzt" secondAttribute="bottom" constant="50" id="8hs-Oj-nW6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jme-P1-Uzt" secondAttribute="trailing" constant="20" id="A7a-c7-2ig"/>
+                            <constraint firstItem="xbY-lu-Zj3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AfY-jN-DTJ"/>
+                            <constraint firstItem="Jme-P1-Uzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="C20-7v-mFm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kzp-xm-8E1" secondAttribute="trailing" constant="20" id="CtB-rf-NKV"/>
+                            <constraint firstItem="yty-K0-tek" firstAttribute="top" secondItem="kzp-xm-8E1" secondAttribute="bottom" constant="15" id="L9g-Pm-JtN"/>
+                            <constraint firstItem="8iy-iA-vHY" firstAttribute="top" secondItem="yty-K0-tek" secondAttribute="bottom" constant="118" id="ZB7-qq-RSz"/>
+                            <constraint firstItem="yty-K0-tek" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cPM-qS-VFn"/>
+                            <constraint firstItem="kzp-xm-8E1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dYS-8a-Cgk"/>
+                            <constraint firstItem="8iy-iA-vHY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dc1-RZ-F09"/>
+                            <constraint firstItem="xbY-lu-Zj3" firstAttribute="top" secondItem="8iy-iA-vHY" secondAttribute="bottom" constant="17" id="fFg-G5-maU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yty-K0-tek" secondAttribute="trailing" constant="20" id="fog-3M-Mfo"/>
+                            <constraint firstItem="GnZ-e4-rLA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gzI-lF-b9r"/>
+                            <constraint firstItem="GnZ-e4-rLA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lQO-fN-0PM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="35"/>
+        </scene>
+    </scenes>
+</document>

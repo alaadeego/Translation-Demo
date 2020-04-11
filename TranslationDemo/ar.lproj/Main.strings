@@ -1,0 +1,10 @@
+
+/* Class = "UILabel"; text = "hello one "; ObjectID = "Jme-P1-Uzt"; */
+"Jme-P1-Uzt.text" = "هلو ون  ";
+
+/* Class = "UIButton"; normalTitle = "its a button "; ObjectID = "MGU-Iz-fTw"; */
+"MGU-Iz-fTw.normalTitle" = "بوتن";
+
+/* Class = "UITextField"; placeholder = "here a place holder "; ObjectID = "kzp-xm-8E1"; */
+"kzp-xm-8E1.placeholder" = "اكتب هنا";
+"yty-K0-tek.placeholder" = "رقم الهاتف ";

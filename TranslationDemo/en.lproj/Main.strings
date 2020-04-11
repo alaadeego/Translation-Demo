@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Welcome to translator demo "; ObjectID = "Jme-P1-Uzt"; */
+"Jme-P1-Uzt.text" = "Welcome to translator demo ";
+
+/* Class = "UIButton"; normalTitle = "its a button "; ObjectID = "MGU-Iz-fTw"; */
+"MGU-Iz-fTw.normalTitle" = "its a button ";
+
+/* Class = "UITextField"; placeholder = "write your name "; ObjectID = "kzp-xm-8E1"; */
+"kzp-xm-8E1.placeholder" = "write your name ";
+
+/* Class = "UITextField"; placeholder = "write your phone number "; ObjectID = "yty-K0-tek"; */
+"yty-K0-tek.placeholder" = "write your phone number ";
